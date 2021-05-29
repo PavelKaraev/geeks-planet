@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Игры</title>
+        <base href="http://localhost:4000">
+        <meta name="theme-color" content="#c9e0e04d">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <body>
+        <header class="header">
+  <div class="header__container container-lg ">
+    <a href="#" class="logo">
+      <img src="img/svg/geek's-planet-logo.svg" class="logo__image" alt="GEEK'S-PLANET">
+      <h1 class="logo__title">Geek's-Planet</h1>
+    </a>
+    <nav class="header__nav">
+      <div class="header__search">
+        <form class="header__search-form container-lg">
+          <input type="search" placeholder="Поиск..." class="header__search-input">
+          <button type="button" aria-label="search" class="btn btn_green btn_icon">
+            <svg width="18px" height="18px">
+              <use xlink:href="img/sprites/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+      <ul class="menu">
+        <li class="menu__item menu__item_dropdown">
+          <a class="menu__link" href="index.html">Новости</a>
+          <ul class="menu__dropdown">
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-magazine.html">PC</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-blog.html">Xbox</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-magazine.html">Playstation</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-blog.html">VR</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-magazine.html">Железо</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-blog.html">Кино</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item menu__item_dropdown">
+          <a class="menu__link" href="pages/articles.html">Статьи</a>
+          <ul class="menu__dropdown">
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-magazine.html">Home Magazine</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-blog.html">Home Blog</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-magazine.html">Home Magazine</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-blog.html">Home Blog</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-magazine.html">Home Magazine</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-blog.html">Home Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item menu__item_dropdown">
+          <a class="menu__link" href="index.html">Видео</a>
+          <ul class="menu__dropdown">
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-magazine.html">Home Magazine</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-blog.html">Home Blog</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-magazine.html">Home Magazine</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-blog.html">Home Blog</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-magazine.html">Home Magazine</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-blog.html">Home Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item menu__item_dropdown">
+          <a class="menu__link" href="index.html">Кино</a>
+          <ul class="menu__dropdown">
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-magazine.html">Home Magazine</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-blog.html">Home Blog</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-magazine.html">Home Magazine</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-blog.html">Home Blog</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-magazine.html">Home Magazine</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-blog.html">Home Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item menu__item_dropdown">
+          <a class="menu__link" href="index.html">Игры</a>
+          <ul class="menu__dropdown">
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-magazine.html">Home Magazine</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-blog.html">Home Blog</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-magazine.html">Home Magazine</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-blog.html">Home Blog</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-magazine.html">Home Magazine</a>
+            </li>
+            <li class="menu__dropdown-item">
+              <a class="menu__dropdown-link" href="home-blog.html">Home Blog</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <button type="button" id="btn_search" aria-label="search" class="btn btn_dark btn_icon">
+        <svg width="18px" height="18px">
+          <use xlink:href="img/sprites/sprite.svg#search"></use>
+        </svg>
+      </button>
+      <div class="dropdown header__user">
+          <div class="header__user-toggle" data="dropdown-toggle">
+            <img src="img/default_image.png" width="40px" height="40px" alt="">
+          </div>
+          <div class="header__user-dropdown" data="dropdown-menu">
+            <a href="#" class="header__user-dropdown__link"><i class="fa fa-user"></i> Профиль</a>
+            <a href="#" class="header__user-dropdown__link"><i class="fa fa-cog"></i> Редактировать</a>
+            <a href="#" class="header__user-dropdown__link"><i class="fa fa-heart"></i> Админ панель</a>
+            <div class="header__divider"></div>
+            <a href="login.html" class="header__user-dropdown__link"><i class="fas fa-sign-out-alt"></i> Выйти</a> 
+          </div>
+      </div>
+    </nav>
+    <div class="header__action">
+      <!--<a href="#" class="btn btn_dark btn_icon btn_icon_login"></a>
+      <a href="#" class="btn btn_dark btn_icon btn_icon_registr"></a>-->
+      <button type="button" class="btn btn_dark btn__nav-toggle">
+        <span class="btn__nav-toggle__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+        <nav class="breadcrumbs" aria-label="breadcrumb">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Geek’s-planet</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Статьи</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</nav>
+        <main class="main-content page-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="main-title main-title_light main-title_games">
+  <h2 class="main-title__text">Игры</h2>
+</div>
+              </div>
+              <div class="col-lg-9">
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="card-post card-post_dark">
+  <a href="#" class="card-post__image">
+    <img src="img/catalog/god-of-war.jpeg" class="img-fluid" alt="God of War" />
+  </a>
+  <div class="rating rating_badge" data-rating="70">7.0</div>
+  <div class="card-post__content">
+    <div class="card-post__info">
+      <a href="#mac" class="card-post__info-link"></a>
+      <a href="#pc" class="card-post__info-link"></a>
+      <a href="#playstation" class="card-post__info-link"></a>
+      <a href="#xbox" class="card-post__info-link"></a>
+    </div>
+    <h4 class="card-post__title">
+      <a href="#">God Of War</a>
+    </h4>
+  </div>
+</div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="card-post card-post_dark">
+  <a href="#" class="card-post__image">
+    <img src="img/catalog/god-of-war.jpeg" class="img-fluid" alt="God of War" />
+  </a>
+  <div class="rating rating_badge" data-rating="70">7.0</div>
+  <div class="card-post__content">
+    <div class="card-post__info">
+      <a href="#mac" class="card-post__info-link"></a>
+      <a href="#pc" class="card-post__info-link"></a>
+      <a href="#playstation" class="card-post__info-link"></a>
+      <a href="#xbox" class="card-post__info-link"></a>
+    </div>
+    <h4 class="card-post__title">
+      <a href="#">God Of War</a>
+    </h4>
+  </div>
+</div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="card-post card-post_dark">
+  <a href="#" class="card-post__image">
+    <img src="img/catalog/god-of-war.jpeg" class="img-fluid" alt="God of War" />
+  </a>
+  <div class="rating rating_badge" data-rating="70">7.0</div>
+  <div class="card-post__content">
+    <div class="card-post__info">
+      <a href="#mac" class="card-post__info-link"></a>
+      <a href="#pc" class="card-post__info-link"></a>
+      <a href="#playstation" class="card-post__info-link"></a>
+      <a href="#xbox" class="card-post__info-link"></a>
+    </div>
+    <h4 class="card-post__title">
+      <a href="#">God Of War</a>
+    </h4>
+  </div>
+</div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="card-post card-post_dark">
+  <a href="#" class="card-post__image">
+    <img src="img/catalog/god-of-war.jpeg" class="img-fluid" alt="God of War" />
+  </a>
+  <div class="rating rating_badge" data-rating="70">7.0</div>
+  <div class="card-post__content">
+    <div class="card-post__info">
+      <a href="#mac" class="card-post__info-link"></a>
+      <a href="#pc" class="card-post__info-link"></a>
+      <a href="#playstation" class="card-post__info-link"></a>
+      <a href="#xbox" class="card-post__info-link"></a>
+    </div>
+    <h4 class="card-post__title">
+      <a href="#">God Of War</a>
+    </h4>
+  </div>
+</div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="card-post card-post_dark">
+  <a href="#" class="card-post__image">
+    <img src="img/catalog/god-of-war.jpeg" class="img-fluid" alt="God of War" />
+  </a>
+  <div class="rating rating_badge" data-rating="70">7.0</div>
+  <div class="card-post__content">
+    <div class="card-post__info">
+      <a href="#mac" class="card-post__info-link"></a>
+      <a href="#pc" class="card-post__info-link"></a>
+      <a href="#playstation" class="card-post__info-link"></a>
+      <a href="#xbox" class="card-post__info-link"></a>
+    </div>
+    <h4 class="card-post__title">
+      <a href="#">God Of War</a>
+    </h4>
+  </div>
+</div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="card-post card-post_dark">
+  <a href="#" class="card-post__image">
+    <img src="img/catalog/god-of-war.jpeg" class="img-fluid" alt="God of War" />
+  </a>
+  <div class="rating rating_badge" data-rating="70">7.0</div>
+  <div class="card-post__content">
+    <div class="card-post__info">
+      <a href="#mac" class="card-post__info-link"></a>
+      <a href="#pc" class="card-post__info-link"></a>
+      <a href="#playstation" class="card-post__info-link"></a>
+      <a href="#xbox" class="card-post__info-link"></a>
+    </div>
+    <h4 class="card-post__title">
+      <a href="#">God Of War</a>
+    </h4>
+  </div>
+</div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="card-post card-post_dark">
+  <a href="#" class="card-post__image">
+    <img src="img/catalog/god-of-war.jpeg" class="img-fluid" alt="God of War" />
+  </a>
+  <div class="rating rating_badge" data-rating="70">7.0</div>
+  <div class="card-post__content">
+    <div class="card-post__info">
+      <a href="#mac" class="card-post__info-link"></a>
+      <a href="#pc" class="card-post__info-link"></a>
+      <a href="#playstation" class="card-post__info-link"></a>
+      <a href="#xbox" class="card-post__info-link"></a>
+    </div>
+    <h4 class="card-post__title">
+      <a href="#">God Of War</a>
+    </h4>
+  </div>
+</div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="card-post card-post_dark">
+  <a href="#" class="card-post__image">
+    <img src="img/catalog/god-of-war.jpeg" class="img-fluid" alt="God of War" />
+  </a>
+  <div class="rating rating_badge" data-rating="70">7.0</div>
+  <div class="card-post__content">
+    <div class="card-post__info">
+      <a href="#mac" class="card-post__info-link"></a>
+      <a href="#pc" class="card-post__info-link"></a>
+      <a href="#playstation" class="card-post__info-link"></a>
+      <a href="#xbox" class="card-post__info-link"></a>
+    </div>
+    <h4 class="card-post__title">
+      <a href="#">God Of War</a>
+    </h4>
+  </div>
+</div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="card-post card-post_dark">
+  <a href="#" class="card-post__image">
+    <img src="img/catalog/god-of-war.jpeg" class="img-fluid" alt="God of War" />
+  </a>
+  <div class="rating rating_badge" data-rating="70">7.0</div>
+  <div class="card-post__content">
+    <div class="card-post__info">
+      <a href="#mac" class="card-post__info-link"></a>
+      <a href="#pc" class="card-post__info-link"></a>
+      <a href="#playstation" class="card-post__info-link"></a>
+      <a href="#xbox" class="card-post__info-link"></a>
+    </div>
+    <h4 class="card-post__title">
+      <a href="#">God Of War</a>
+    </h4>
+  </div>
+</div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="card-post card-post_dark">
+  <a href="#" class="card-post__image">
+    <img src="img/catalog/god-of-war.jpeg" class="img-fluid" alt="God of War" />
+  </a>
+  <div class="rating rating_badge" data-rating="70">7.0</div>
+  <div class="card-post__content">
+    <div class="card-post__info">
+      <a href="#mac" class="card-post__info-link"></a>
+      <a href="#pc" class="card-post__info-link"></a>
+      <a href="#playstation" class="card-post__info-link"></a>
+      <a href="#xbox" class="card-post__info-link"></a>
+    </div>
+    <h4 class="card-post__title">
+      <a href="#">God Of War</a>
+    </h4>
+  </div>
+</div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="card-post card-post_dark">
+  <a href="#" class="card-post__image">
+    <img src="img/catalog/god-of-war.jpeg" class="img-fluid" alt="God of War" />
+  </a>
+  <div class="rating rating_badge" data-rating="70">7.0</div>
+  <div class="card-post__content">
+    <div class="card-post__info">
+      <a href="#mac" class="card-post__info-link"></a>
+      <a href="#pc" class="card-post__info-link"></a>
+      <a href="#playstation" class="card-post__info-link"></a>
+      <a href="#xbox" class="card-post__info-link"></a>
+    </div>
+    <h4 class="card-post__title">
+      <a href="#">God Of War</a>
+    </h4>
+  </div>
+</div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="card-post card-post_dark">
+  <a href="#" class="card-post__image">
+    <img src="img/catalog/god-of-war.jpeg" class="img-fluid" alt="God of War" />
+  </a>
+  <div class="rating rating_badge" data-rating="70">7.0</div>
+  <div class="card-post__content">
+    <div class="card-post__info">
+      <a href="#mac" class="card-post__info-link"></a>
+      <a href="#pc" class="card-post__info-link"></a>
+      <a href="#playstation" class="card-post__info-link"></a>
+      <a href="#xbox" class="card-post__info-link"></a>
+    </div>
+    <h4 class="card-post__title">
+      <a href="#">God Of War</a>
+    </h4>
+  </div>
+</div>
+                  </div>
+                </div>
+                <nav class="pagination-container pagination" role="navigation" aria-label="Page navigation">
+  <ul class="page-numbers">
+    <li>
+      <span aria-current="page" class="page-numbers current">1</span>
+    </li>
+    <li>
+      <a class="page-numbers" href="#">2</a>
+    </li>
+    <li>
+      <a class="page-numbers" href="#">3</a>
+    </li>
+    <li>
+      <a class="page-numbers" href="#">4</a>
+    </li>
+    <li>
+      <a class="page-numbers" href="#">5</a>
+    </li>
+    <li>
+      <span class="page-numbers dots">…</span>
+    </li>
+    <li>
+      <a class="page-numbers" href="#">10</a>
+    </li>
+    <li>
+      <a class="next page-numbers" href="#">
+        <i class="fa fa-angle-right"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        </main>
+        <section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="main-title main-title_light main-title_about">
+  <h2 class="main-title__text">Geek's-Planet</h2>
+</div>
+      </div>
+      <div class="col-12">
+        <div class="card-post card-post_light">
+          <div class="card-post__content">
+            <h4 class="card-post__title">Рады приветствовать Вас на нашем сайте. Что тут можно найти?</h4>
+            <div class="card-post__excerpt">
+              <p>Много игр, отсортированных по алфавиту; ежедневные горячие игровые новости; актуальные обзоры игр; коды к играм как к новым, так и к древним игрушкам; большое количество прохождений игр, которые помогут Вам с легкостью пройти любимую игру; трейнеры и сейвы, помогающие геймерам; множество скриншотов из игр и обоев игровой тематики; различные советы и тактики игр от наших постоянных посетителей.</p>
+              <p>Помимо игр на компьютер, у нас вы найдете материалы по консольным проектам. Игры на Sony PlayStation 2, 3 и 4, PS Vita, Xbox One и 360, Nintendo Wii U и DS, а также на мобильные телефоны и планшеты iPad, iPhone и Android ждут вас на наших страницах. Обзоры как бесплатных игр на компьютер, консоли и мобильные платформы, так и на лучшие коммерческие хиты вы найдете на StopGame.</p>
+              <p>Для тех же, кто предпочитает смотреть, а не читать, открыт наш StopGame-видеоканал. Всегда в эфире: игровое видео (трейлеры, интервью, репортажи), актуальные видеообзоры и видеопревью; удивительная машинима и кино по мотивам игр; наш ежедневный новостной видео-дайджест «Инфакт» обо всём и сразу из мира игр; видеодайджест ретро-игр «Ретрозор»; новости об инди индустрии в передаче «Индикатор»; любители онлайн игр и сетевых баталий оценят ММО-дайджест «ММОдерн»; новости из мира мобильных технологий и обзоры игр на телефоны, планшеты всегда в «AppZor»; и завершает все наш «Календарь релизов» - коротко об игровых новинках грядущего месяца. Каждый ролик можно смотреть как в браузере, так и скачать его в разных вариантах качества.</p>
+              <p>Для тех, кто хочет всегда оставаться в курсе игровых событий открыт раздел даты выхода игр, в котором можно найти ближайшие релизы любимых проектов.</p>
+              <p>Для тех, кто еще не разучился читать, наши постоянные рубрики «Первая полоса» и «Аналитика», где можно ознакомиться с новыми игровыми тенденциями, узнать вектор развития рынка и прочитать о новых технологиях из мира игр.
+                С помощью нас можно следить за онлайн сражениями в рубрике «Live-трансляции» (стримы), когда наша команда разбирает игровой проект в прямом эфире и общается с посетителями сайта. Записи этих эфиров всегда доступны у нас и конечно же их расписание.
+                Мобильные игроки оценят нашу коллекцию бесплатных игр нa тeлeфон. Доступны мобильные игры в разных жанрах и для разных разрешений экранов.</p>
+              <p>Для занятых людей у нас работают rss лента всех обновлений сайта, ежедневная бесплатная рассылка на ваш email и уникальная система слежения за играми.</p>
+              <p>Любителям статистики посвящены наши топы - 50 лучших материалов сайта, 50 лучших игр, за которыми следят наши пользователи и рейтинг игр согласно оценкам посетителей.
+                Для ликбеза у нас есть рубрика FAQ - вопросы и ответы по играм, где каждый может как спросить так и помочь в поиске сложных решений по любой проблеме.</p>
+              <p>Все вопросы, касающиеся игр можно задать на наших игровых блогах или просто пообщаться с такими же любителями игр.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <footer class="footer">
+  <div class="footer__section footer__section_subscribe">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+          <h4 class="footer__title">Подписка на новости</h4>
+          <form action="" class="footer__subscribe">
+            <input type="email" name="email" id="email" class="footer__subscribe-input">
+            <button class="btn btn_icon btn_green" type="submit" accesskey="">
+              <svg width="20px" height="20px">
+                <use xlink:href="img/sprites/sprite.svg#paper-airplane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="social-list">
+  <a href="#" class="btn btn_dark btn_icon btn_vk" aria-label="vkontakte"></a>
+  <a href="#" class="btn btn_dark btn_icon btn_facebook" aria-label="facebook"></a>
+  <a href="#" class="btn btn_dark btn_icon btn_youtube" aria-label="youtube"></a>
+  <a href="#" class="btn btn_dark btn_icon btn_twitch" aria-label="twitch"></a>
+  <a href="#" class="btn btn_dark btn_icon btn_instagram" aria-label="steam"></a>
+  <a href="#" class="btn btn_dark btn_icon btn_telegram" aria-label="telegram"></a>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <p class="footer__copyright"><i class="far fa-copyright"></i> 2018 GEEK'S-PLANET</p>
+          <p class="footer__copyright">Использование любых материалов сайта без согласования с администрацией запрещено.</p>
+        </div>
+        <div class="col-sm-3 footer__warning">
+          <div class="footer__warning-block">
+            <svg width="20px" height="20px">
+              <use xlink:href="img/sprites/sprite.svg#info"></use>
+            </svg>
+            +18
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+        <script src="js/main.min.js"></script>
+        <script src="js/vendor.min.js"></script>
+    </body>
+</html>
